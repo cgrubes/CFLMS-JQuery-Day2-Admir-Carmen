@@ -22,6 +22,7 @@ for (let i = 0; i < persons.length; i++){
 
 	let person = `<div id="${i}" class="person">
 	<img src="${persons[i].image}">
+    <p class="p"></p>
 		<div class="name">
 			<p>${persons[i].name}</p>
 			</div>
@@ -31,12 +32,14 @@ for (let i = 0; i < persons.length; i++){
 }
 
 $(".person").on("click", function(){
-        let content = persons[this.id].hobby;
-        $("#"+this.id).append("Hobby: " + content +"<br>");
+    let selector= $("#"+this.id).find(".p");
+    selector.text("");
+        let hobby = persons[this.id].hobby;
+        selector.append("Hobby: " + hobby +"<br>");
         let age = persons[this.id].age;
-        $("#"+this.id).append("Age: " + age +"<br>");
+        selector.append("Age: " + age +"<br>");
         let color = persons[this.id].color;
-        $("#"+this.id).append("Favorite color: " + color +"<br>");
+        selector.append("Favorite color: " + color +"<br>");
         
     })
 
