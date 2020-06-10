@@ -1,0 +1,11 @@
+family = `[
+    {"name": "Jane","age": "28","hobby": "traveling", "color": "green", "image": "img/pic1.jpg"},
+    {"name": "Sara","age": "26","hobby": "archery", "color": "yellow", "image": "img/pic2.jpg"},
+    {"name": "Michelle","age": "48","hobby": "reading", "color": "blue", "image": "img/pic3.jpg"},
+    {"name": "Paul","age": "24","hobby": "dancing", "color": "red", "image": "img/pic4.jpg"},
+    {"name": "Ryan","age": "50","hobby": "drawing", "color": "orange", "image": "img/pic5.jpg"}    
+    
+      
+    
+    
+]`

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="family.json"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="family.css">
+    <title>Family Photos</title>
+</head>
+<body>
+    <div class="pics">     
+    </div>
+
+
+ <script>
+     $(document).ready(function(){
+        const persons = JSON.parse(family);
+
+
+for (let i = 0; i < persons.length; i++){
+
+	let person = `<div id="${i}" class="person">
+	<img src="${persons[i].image}">
+		<div class="name">
+			<p>${persons[i].name}</p>
+			</div>
+	</div>`;
+	$('.pics').append(person);
+    
+}
+
+$(".person").on("click", function(){
+        let content = persons[this.id].hobby;
+        $("#"+this.id).append("Hobby: " + content +"<br>");
+        let age = persons[this.id].age;
+        $("#"+this.id).append("Age: " + age +"<br>");
+        let color = persons[this.id].color;
+        $("#"+this.id).append("Favorite color: " + color +"<br>");
+        
+    })
+
+
+
+
+
+
+    /*$(".person").on("click", function(){
+        let content = persons[this.id].hobby;
+        $("#"+this.id).text(content);
+    })*/
+
+
+/*
+    $("img").on("click", function(){
+        for (let i=0; i<persons.length; i++){
+            let additional = `<div class="additional">
+        <p>Hobby: ${persons[i].hobby}</p>
+        <p>Age: ${persons[i].age}</p>
+        </div>`;
+        $(".person").append(additional);
+        }
+     })*/
+
+
+       
+     })
+
+ </script>   
+</body>
+</html>

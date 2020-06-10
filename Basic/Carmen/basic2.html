@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <link rel="stylesheet" href="basic2.css">
+<!--<link rel="stylesheet" href="basic2.css">-->
     <title>Basic2</title>
 </head>
 <body>
@@ -34,8 +34,23 @@
         "height": "10%"
     })
 
+    $("topRow").css({
+        "display" : "flex",
+        "flex-direction" : "row"
+    })
+
+    $("midRow").css({
+        "display" : "flex",
+        "flex-direction" : "row"
+    })
+
+    $("botRow").css({
+        "display" : "flex",
+        "flex-direction" : "row"
+    })
+
        $("img").on("click", function(){
-           let santa = $(this).attr("santa");
+           let santa = $(this).attr("alt === santa");
            $(this).hide(santa);
        })
    })

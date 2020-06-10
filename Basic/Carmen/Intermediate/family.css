@@ -1,0 +1,27 @@
+.pics{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 20vw;
+    height:20vw;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.name{
+    text-align: center;
+}
+
+.additional{
+    text-align: center;
+
+}
+
+.person{
+    text-align: center;
+}
