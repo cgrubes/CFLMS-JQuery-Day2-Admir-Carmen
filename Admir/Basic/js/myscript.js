@@ -6,5 +6,6 @@ $(document).ready(function() {
     $("img").click(function() {
         let content = $(this).attr("alt");
         $("#result").text("This is " + content);
+        $(this).addClass("christmas");
     });
 });
