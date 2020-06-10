@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Basic1 Xmas Pics</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="basic1.css">
+    
+    
 </head>
 <body>
+    <div class="body">
+    <div id="pic1">
+    <img class="pic"src="img/santa.png" alt="santa">
+    </div>  
+
+    <div id="pic2">
+    <img class="pic" src="img/bell.png" alt="bell">
+    </div>
+
+    <div id="pic3">
+    <img class="pic"src="img/white_gift_box.png" alt="present">
+    </div>
+</div>
+<br>
+<div id="result"></div>
+
+<script>
+
+    $("#result").css({
+        "text-align": "center",
+        "font-size": "32pt"
+    })
+
+    $(document).ready(function(){
+        $("img").click(function(){
+            let content = $(this).attr("alt");
+            $("#result").text("You clicked on " + content);
+        });
+
+    });
+    //ugly solution but it works
+    /*$(document).ready(function(){
+       $("#pic1").on("click", function(){
+            $(this).text("You clicked on santa")
+        })
+
+        $("#pic2").on("click", function(){
+            $(this).text("You clicked on the bell")
+        })
+
+        $("#pic3").on("click", function(){
+            $(this).text("You clicked on the present")
+        })*/
+
     
+
+
+
+        
+
+    
+</script>
 </body>
 </html>

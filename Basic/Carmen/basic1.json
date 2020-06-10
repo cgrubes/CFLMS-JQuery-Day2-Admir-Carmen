@@ -1,0 +1,18 @@
+pics = `[
+    {"name": "santa",
+    "image": "img/santa.png",
+    "text": "You clicked on Santa" 
+    },
+    {
+    "name": "bell",
+    "image": "img/bell.png",
+    "text": "You clicked on the bell" 
+    },
+    {
+    "name": "present",
+    "image": "img/white_gift_box.png",
+    "text": "You clicked on the present"
+    }
+    
+    
+]`;
