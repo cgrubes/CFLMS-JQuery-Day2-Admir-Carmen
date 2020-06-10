@@ -1,0 +1,16 @@
+.topRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.midRow{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.botRow{
+    display: flex;
+    flex-direction: row;
+
+}

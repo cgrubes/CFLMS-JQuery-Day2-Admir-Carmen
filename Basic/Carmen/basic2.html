@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="basic2.css">
+    <title>Basic2</title>
+</head>
+<body>
+    <div class="topRow">
+        <img src="img/white_gift_box.png" alt="present">
+        <img src="img/santa.png" alt="santa">
+         <img src="img/white_gift_box.png" alt="present">
+    </div>
+
+    <div class="midRow">
+        <img src="img/white_gift_box.png" alt="present">
+        <img src="img/santa.png" alt="santa">
+         <img src="img/white_gift_box.png" alt="present">
+    </div>
+
+    <div class="botRow">
+        <img src="img/santa.png" alt="santa">
+        <img src="img/white_gift_box.png" alt="present">
+        <img src="img/santa.png" alt="santa">
+    </div>
+
+<script>
+
+  $(document).ready(function(){
+    $("img").css({
+        "width": "10%",
+        "height": "10%"
+    })
+
+       $("img").on("click", function(){
+           let santa = $(this).attr("santa");
+           $(this).hide(santa);
+       })
+   })
+
+
+
+</script>
+</body>
+</html>
